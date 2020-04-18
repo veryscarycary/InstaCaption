@@ -1,0 +1,176 @@
+//
+//  QuoteBrain.swift
+//  InstaComments
+//
+//  Created by Cary Meskell on 4/16/20.
+//  Copyright © 2020 Cary Meskell. All rights reserved.
+//
+
+import Foundation
+
+struct QuoteBrain {
+    let quotes = [
+        "motivational": [
+            "When nothing goes right, go left.",
+            "Stay foolish to stay sane.",
+            "No pressure, no diamonds.",
+            "Prove them wrong.",
+            "Take the risk or lose the chance.",
+            "I can and I will.",
+            "No guts, no story.",
+            "Screw it, let’s do it.",
+            "Boldness be my friend.",
+            "Stay hungry. Stay foolish.",
+            "Leave no stone unturned.",
+            "And so the adventure begins.",
+            "If you want it, work for it.",
+            "You can if you think you can.",
+            "Grow through what you go through.",
+            "Do it with passion or not at all.",
+            "She believed she could, so she did.",
+            "The past does not equal the future.",
+            "At the end of hardship comes happiness.",
+            "Don’t dream your life, live your dream.",
+            "If it matters to you, you’ll find a way.",
+            "Forget about style; worry about results.",
+            "Whatever you do, do with all your might.",
+            "Dream without fear. Love without limits.",
+            "Every noble work is at first impossible.",
+            "If you’re going through hell, keep going.",
+            "You can do anything you set your mind to.",
+            "Open your mind. Get up off the couch.",
+            "In life you need either inspiration or desperation.",
+            "The two most important days in your life are the day you are born and they day you find out why.",
+        ],
+        "positive": [
+            "Be happy. Be bright. Be you.",
+            "Every day is a second chance.",
+            "Darling, you are a work of art.",
+            "Happiness looks gorgeous on you.",
+            "You are capable of amazing things.",
+            "You are somebody’s reason to smile.",
+            "Think like a proton, always positive.",
+            "You are stronger than you think you are.",
+            "Focus on the journey, not the destination.",
+            "Believe you can and you’re halfway there.",
+            "Start every day off with a smile and get it over with.",
+            "If you want to lift yourself up, lift up someone else.",
+            "A problem is a chance for you to do your best.",
+            "Go!",
+            "Love.",
+            "Begin.",
+            "Let go.",
+            "Breathe.",
+            "Slow down.",
+            "Let it be.",
+            "Go for it.",
+            "I love you.",
+            "Keep going.",
+            "Choose joy.",
+            "Enjoy today.",
+            "C’est la vie.",
+            "Choose happy.",
+            "Keep it cool.",
+            "Take it easy.",
+            "Be in the now.",
+            "Live the moment.",
+            "Choose to shine.",
+            "No pain, no gain.",
+            "Do it. With love.",
+            "It is what it is.",
+            "Love conquers all.",
+            "Keep your chin up.",
+            "Follow your heart.",
+            "Don’t rush things.",
+            "You only live once.",
+            "Never stop dreaming.",
+            "Now is all you have.",
+            "Keep moving forward.",
+            "This too shall pass.",
+            "Every moment matters.",
+            "Love more. Worry less.",
+            "Dust settles. I don’t.",
+            "Nothing lasts forever.",
+            "Work hard. Stay humble.",
+            "Enjoy the little things.",
+            "The best is yet to come.",
+            "Better things are coming.",
+            "Collect moments – not things.",
+            "Feel the fear and do it anyway."
+        ],
+        "funny": [
+            "Why do they put pizza in a square box?",
+            "Do not read the next sentence. You little rebel, I like you.",
+            "I intend to live forever. So far, so good.",
+            "My life feels like a test I didn’t study for.",
+            "I drive way too fast to worry about cholesterol.",
+            "A day without sunshine is like, you know, night.",
+            "Go to Heaven for the climate, Hell for the company.",
+            "Every novel is a mystery novel if you never finish it.",
+            "It’s easy to quit smoking. I’ve done it hundreds of times.",
+            "The risk I took was calculated, but man, I am bad at math.",
+            "I couldn’t repair your brakes, so I made your horn louder.",
+            "Do not read the next sentence. You little rebel, I like you.",
+            "Always borrow money from a pessimist. He won’t expect it back.",
+            "I never feel more alone than when I’m trying to put sunscreen on my back.",
+            "The key to eating healthy is not eating any food that has a TV commercial.",
+            "There are three types of people in this world: those who can count, and those who can’t.",
+            "The closest a person ever comes to perfection is when he fills out a job application form."
+        ],
+        "cute": [
+            "I still fall in love with you every day.",
+            "You smile, I smile. That’s how it works.",
+            "She was a rainbow, but he was color blind.",
+            "Shine like the stars.",
+            "You make my heart smile.",
+            "You will forever be my always.",
+            "Your voice is my favorite sound.",
+            "Throw kindness around like confetti.",
+            "My favorite place is inside your hug.",
+            "We were born to be real, not to be perfect.",
+            "When I count my blessings, I count you twice.",
+            "By the way, I’m wearing the smile you gave me.",
+            "If you are not too long, I will wait here for you all my life.",
+            "When it rains look for rainbows. When it’s dark look for stars.",
+            "To the world you may be one person, but to one person you are the world.",
+            "I love you not only for what you are, but for what I am when I am with you.",
+        ],
+        "friendship": [
+            "Find your tribe. Love them hard.",
+            "Try to be a rainbow in someone’s cloud.",
+            "Love is blind; friendship closes its eyes.",
+            "Any day spent with you is my favorite day.",
+            "The only way to have a friend is to be one.",
+            "Friends are the siblings God never gave us.",
+            "Rare as is true love, true friendship is rarer.",
+            "The good man is the friend of all living things.",
+            "One loyal friend is worth ten thousand relatives.",
+            "Treasure your relationships, not your possessions.",
+            "Friendship always benefits; love sometimes injures.",
+            "The language of friendship is not words but meanings.",
+            "Friends? You don’t need more than your few close ones.",
+            "Wherever we are, it is our friends that make our world.",
+            "It’s a beautiful thing to love others just as they are.",
+            "My best friend is the one who brings out the best in me.",
+            "If you have one true friend you have more than your share.",
+            "The real business of life is trying to understand each other.",
+            "People are lonely because they build walls instead of bridges.",
+            "Friends show their love in times of trouble, not in happiness.",
+            "A friend is someone who knows all about you and still loves you.",
+            "The greatest gift of life is friendship, and I have received it.",
+            "True friendship comes when the silence between two people is comfortable.",
+        ]
+    ]
+    
+    var allQuotes: [String] {
+       return quotes.map { $0.value }[0]
+    }
+    
+    func getCategories() -> [String] {
+        return quotes.map { $0.key }
+    }
+    
+    func getRandomQuote() -> String {
+        return allQuotes.randomElement()!
+    }
+}
