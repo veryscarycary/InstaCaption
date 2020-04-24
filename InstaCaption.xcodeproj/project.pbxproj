@@ -46,7 +46,7 @@
 		1FA19C3B2448433C00E6F665 = {
 			isa = PBXGroup;
 			children = (
-				1FA19C462448433C00E6F665 /* InstaComments */,
+				1FA19C462448433C00E6F665 /* InstaCaption */,
 				1FA19C452448433C00E6F665 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,7 +59,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1FA19C462448433C00E6F665 /* InstaComments */ = {
+		1FA19C462448433C00E6F665 /* InstaCaption */ = {
 			isa = PBXGroup;
 			children = (
 				1FA19C5E244957CC00E6F665 /* Models */,
@@ -71,7 +71,7 @@
 				1FA19C522448433D00E6F665 /* LaunchScreen.storyboard */,
 				1FA19C552448433D00E6F665 /* Info.plist */,
 			);
-			path = InstaComments;
+			path = InstaCaption;
 			sourceTree = "<group>";
 		};
 		1FA19C5B2449579F00E6F665 /* Views */ = {
@@ -103,9 +103,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1FA19C432448433C00E6F665 /* InstaComments */ = {
+		1FA19C432448433C00E6F665 /* InstaCaption */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FA19C582448433D00E6F665 /* Build configuration list for PBXNativeTarget "InstaComments" */;
+			buildConfigurationList = 1FA19C582448433D00E6F665 /* Build configuration list for PBXNativeTarget "InstaCaption" */;
 			buildPhases = (
 				1FA19C402448433C00E6F665 /* Sources */,
 				1FA19C412448433C00E6F665 /* Frameworks */,
@@ -115,7 +115,7 @@
 			);
 			dependencies = (
 			);
-			name = InstaComments;
+			name = InstaCaption;
 			productName = InstaComments;
 			productReference = 1FA19C442448433C00E6F665 /* InstaCaption.app */;
 			productType = "com.apple.product-type.application";
@@ -148,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1FA19C432448433C00E6F665 /* InstaComments */,
+				1FA19C432448433C00E6F665 /* InstaCaption */,
 			);
 		};
 /* End PBXProject section */
@@ -322,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NJ9HLU59L2;
-				INFOPLIST_FILE = InstaComments/Info.plist;
+				INFOPLIST_FILE = InstaCaption/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NJ9HLU59L2;
-				INFOPLIST_FILE = InstaComments/Info.plist;
+				INFOPLIST_FILE = InstaCaption/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -364,7 +364,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1FA19C582448433D00E6F665 /* Build configuration list for PBXNativeTarget "InstaComments" */ = {
+		1FA19C582448433D00E6F665 /* Build configuration list for PBXNativeTarget "InstaCaption" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1FA19C592448433D00E6F665 /* Debug */,
