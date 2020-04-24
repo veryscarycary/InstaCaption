@@ -36,9 +36,10 @@ class GenerateViewController: UIViewController {
 extension GenerateViewController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         
-        print(" => \(viewController)")
+        print(" HEYYYYYYY => \(viewController)")
 
         if let vc = viewController as? UINavigationController {
+            print(vc.viewControllers)
             // user tapped BrowseController
             let nextViewController = vc.viewControllers[0] as! BrowseViewController
             nextViewController.quoteBrain = quoteBrain

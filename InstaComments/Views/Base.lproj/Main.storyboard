@@ -11,7 +11,7 @@
         <!--Generate-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GenerateViewController" customModule="InstaComments" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GenerateViewController" customModule="InstaCaption" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7VI-0s-L1Y" userLabel="HeaderView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="InstaComment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xc-3K-MpJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="InstaCaption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xc-3K-MpJ">
                                         <rect key="frame" x="124" y="40" width="166" height="52"/>
                                         <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="42"/>
                                         <color key="textColor" name="BrandWhite"/>
@@ -131,10 +131,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
-        <!--Stuff Baby-->
+        <!--InstaCaption-->
         <scene sceneID="RtU-vc-g82">
             <objects>
-                <viewController id="V1d-jT-Pc8" customClass="BrowseViewController" customModule="InstaComments" sceneMemberID="viewController">
+                <viewController id="V1d-jT-Pc8" customClass="BrowseViewController" customModule="InstaCaption" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MMa-aS-3TX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,76 +163,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ful-eB-JGs"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Stuff Baby" id="lF2-Xe-p7F"/>
+                    <navigationItem key="navigationItem" title="InstaCaption" id="lF2-Xe-p7F"/>
                     <connections>
                         <outlet property="tableView" destination="MDK-LW-4vd" id="8ZZ-QI-Qzy"/>
+                        <segue destination="76L-RZ-1qf" kind="show" identifier="GoToCaptions" id="fXP-mp-0CR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhG-5h-NzK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1902.8985507246377" y="527.67857142857144"/>
-        </scene>
-        <!--Browse-->
-        <scene sceneID="P3a-fe-VKo">
-            <objects>
-                <viewController id="V6C-yV-BjY" customClass="BrowseViewController" customModule="InstaComments" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LWO-6C-fZJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5nN-Qi-0YA">
-                                <rect key="frame" x="0.0" y="80" width="414" height="816"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="QuoteCategoryCell" id="Q2M-0J-tXF">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q2M-0J-tXF" id="Pf3-k3-7JZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Xv-SJ-JXz" userLabel="HeaderView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="InstaComment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jy-2v-j9D">
-                                        <rect key="frame" x="124" y="40" width="166" height="52"/>
-                                        <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="42"/>
-                                        <color key="textColor" name="BrandWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" name="BrandDarkBlue"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="1QG-RU-jk2"/>
-                                    <constraint firstItem="6jy-2v-j9D" firstAttribute="bottom" secondItem="9Xv-SJ-JXz" secondAttribute="bottom" constant="10" id="dDy-rR-Ocd"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="r9p-QZ-UbU"/>
-                                    <constraint firstItem="6jy-2v-j9D" firstAttribute="centerX" secondItem="9Xv-SJ-JXz" secondAttribute="centerX" id="vfF-4j-ECe"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" name="BrandBlueGreen"/>
-                        <constraints>
-                            <constraint firstItem="9Xv-SJ-JXz" firstAttribute="top" secondItem="LWO-6C-fZJ" secondAttribute="top" id="CVp-is-iUG"/>
-                            <constraint firstItem="5nN-Qi-0YA" firstAttribute="leading" secondItem="Hbj-Fm-B9E" secondAttribute="leading" id="KQG-TR-BA3"/>
-                            <constraint firstAttribute="bottom" secondItem="5nN-Qi-0YA" secondAttribute="bottom" id="Udc-Ux-Fg5"/>
-                            <constraint firstItem="9Xv-SJ-JXz" firstAttribute="leading" secondItem="Hbj-Fm-B9E" secondAttribute="leading" id="ZrP-63-wIf"/>
-                            <constraint firstItem="9Xv-SJ-JXz" firstAttribute="trailing" secondItem="Hbj-Fm-B9E" secondAttribute="trailing" id="dyA-AG-EuI"/>
-                            <constraint firstItem="5nN-Qi-0YA" firstAttribute="trailing" secondItem="Hbj-Fm-B9E" secondAttribute="trailing" id="m4v-Mt-b5c"/>
-                            <constraint firstItem="5nN-Qi-0YA" firstAttribute="top" secondItem="9Xv-SJ-JXz" secondAttribute="bottom" id="rMW-kg-aXZ"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Hbj-Fm-B9E"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Browse" selectedImage="list.dash" catalog="system" id="HOT-5L-KXs"/>
-                    <connections>
-                        <outlet property="tableView" destination="5nN-Qi-0YA" id="iln-oO-GIU"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vnI-xY-v2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2644.9275362318845" y="527.67857142857144"/>
+            <point key="canvasLocation" x="1872" y="528"/>
         </scene>
         <!--Browse-->
         <scene sceneID="j5R-Ms-DP6">
@@ -253,6 +192,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xjd-N6-fYF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="992.75362318840587" y="527.67857142857144"/>
+        </scene>
+        <!--InstaCaption-->
+        <scene sceneID="HUn-c0-QU9">
+            <objects>
+                <viewController id="76L-RZ-1qf" customClass="CaptionsViewController" customModule="InstaCaption" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vL6-pr-gbU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vyl-GU-Ipq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuoteCategoryCell" id="Zh6-kD-nhA">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zh6-kD-nhA" id="88b-Jg-MTE">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="BrandBlueGreen"/>
+                        <constraints>
+                            <constraint firstItem="vyl-GU-Ipq" firstAttribute="top" secondItem="vL6-pr-gbU" secondAttribute="top" id="S3j-fG-ptj"/>
+                            <constraint firstItem="vyl-GU-Ipq" firstAttribute="trailing" secondItem="ZdF-6s-trF" secondAttribute="trailing" id="YW6-ND-NJi"/>
+                            <constraint firstAttribute="bottom" secondItem="vyl-GU-Ipq" secondAttribute="bottom" id="fbZ-fN-0aI"/>
+                            <constraint firstItem="vyl-GU-Ipq" firstAttribute="leading" secondItem="ZdF-6s-trF" secondAttribute="leading" id="oui-KZ-9I4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZdF-6s-trF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="InstaCaption" id="Jxu-tL-Y3r"/>
+                    <connections>
+                        <outlet property="tableView" destination="vyl-GU-Ipq" id="WgB-pO-F0p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJh-0f-eye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2662" y="528"/>
         </scene>
     </scenes>
     <resources>

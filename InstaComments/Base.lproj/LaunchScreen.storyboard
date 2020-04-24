@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="InstaComment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYE-4g-4xY">
-                                <rect key="frame" x="52" y="401" width="311" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InstaCaption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYE-4g-4xY">
+                                <rect key="frame" x="67.5" y="401" width="279" height="94"/>
                                 <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="79"/>
                                 <color key="textColor" name="BrandDarkBlue"/>
                                 <nil key="highlightedColor"/>
@@ -26,6 +25,10 @@
                         </subviews>
                         <color key="backgroundColor" name="BrandWhite"/>
                         <color key="tintColor" name="BrandBlue"/>
+                        <constraints>
+                            <constraint firstItem="WYE-4g-4xY" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="af0-sw-Z1v"/>
+                            <constraint firstItem="WYE-4g-4xY" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="aoO-Zv-axF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -36,13 +39,13 @@
     </scenes>
     <resources>
         <namedColor name="BrandBlue">
-            <color red="0.20968788860000001" green="0.39148759840000003" blue="0.57649272679999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.20999999344348907" green="0.39100000262260437" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="BrandDarkBlue">
-            <color red="0.11840393389999999" green="0.24319356680000001" blue="0.3921738863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.11800000071525574" green="0.24300000071525574" blue="0.3919999897480011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="BrandWhite">
-            <color red="0.95707207920000004" green="0.97629743810000003" blue="0.98431581260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.9570000171661377" green="0.97600001096725464" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

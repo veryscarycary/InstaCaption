@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:InstaComments.xcodeproj">
+      location = "self:/Users/carymeskell/Desktop/Swift/InstaCaption/InstaCaption.xcodeproj">
    </FileRef>
 </Workspace>

@@ -14,6 +14,7 @@ class BrowseViewController: UIViewController {
     var categories: [String] {
         return quoteBrain?.getCategories() ?? []
     }
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -23,9 +24,13 @@ class BrowseViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [ NSAttributedString.Key.font: UIFont(name: "Savoye LET Plain:1.0 42.0", size: 20) ?? UIFont.systemFont(ofSize: 20)]
         
         tableView.dataSource = self
+        tableView.delegate = self
     }
     
 }
+
+
+//MARK: - Datasource Methods
 
 extension BrowseViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,3 +45,20 @@ extension BrowseViewController: UITableViewDataSource {
         
     }
 }
+
+//MARK: - Delegate Methods
+
+extension BrowseViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "GoToCaptions", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! CaptionsViewController
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            destinationVC.captions = quoteBrain?.quotes[categories[indexPath.row]]
+        }
+    }
+}
+

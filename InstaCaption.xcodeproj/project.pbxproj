@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F06AFD9244AA0A00010F93E /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F06AFD8244AA0A00010F93E /* BrowseViewController.swift */; };
+		1F2755242452BCF900344437 /* CaptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2755232452BCF900344437 /* CaptionsViewController.swift */; };
 		1FA19C482448433C00E6F665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA19C472448433C00E6F665 /* AppDelegate.swift */; };
 		1FA19C4A2448433C00E6F665 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA19C492448433C00E6F665 /* SceneDelegate.swift */; };
 		1FA19C4C2448433C00E6F665 /* GenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA19C4B2448433C00E6F665 /* GenerateViewController.swift */; };
@@ -19,7 +20,8 @@
 
 /* Begin PBXFileReference section */
 		1F06AFD8244AA0A00010F93E /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
-		1FA19C442448433C00E6F665 /* InstaComments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaComments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F2755232452BCF900344437 /* CaptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionsViewController.swift; sourceTree = "<group>"; };
+		1FA19C442448433C00E6F665 /* InstaCaption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCaption.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA19C472448433C00E6F665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FA19C492448433C00E6F665 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1FA19C4B2448433C00E6F665 /* GenerateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +54,7 @@
 		1FA19C452448433C00E6F665 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1FA19C442448433C00E6F665 /* InstaComments.app */,
+				1FA19C442448433C00E6F665 /* InstaCaption.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +87,7 @@
 			children = (
 				1FA19C4B2448433C00E6F665 /* GenerateViewController.swift */,
 				1F06AFD8244AA0A00010F93E /* BrowseViewController.swift */,
+				1F2755232452BCF900344437 /* CaptionsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -114,7 +117,7 @@
 			);
 			name = InstaComments;
 			productName = InstaComments;
-			productReference = 1FA19C442448433C00E6F665 /* InstaComments.app */;
+			productReference = 1FA19C442448433C00E6F665 /* InstaCaption.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1FA19C3F2448433C00E6F665 /* Build configuration list for PBXProject "InstaComments" */;
+			buildConfigurationList = 1FA19C3F2448433C00E6F665 /* Build configuration list for PBXProject "InstaCaption" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -173,6 +176,7 @@
 				1FA19C482448433C00E6F665 /* AppDelegate.swift in Sources */,
 				1FA19C4A2448433C00E6F665 /* SceneDelegate.swift in Sources */,
 				1F06AFD9244AA0A00010F93E /* BrowseViewController.swift in Sources */,
+				1F2755242452BCF900344437 /* CaptionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,8 +327,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.carymeskell.InstaComments;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carymeskell.InstaCaption;
+				PRODUCT_NAME = InstaCaption;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -341,8 +345,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.carymeskell.InstaComments;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carymeskell.InstaCaption;
+				PRODUCT_NAME = InstaCaption;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -351,7 +355,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1FA19C3F2448433C00E6F665 /* Build configuration list for PBXProject "InstaComments" */ = {
+		1FA19C3F2448433C00E6F665 /* Build configuration list for PBXProject "InstaCaption" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1FA19C562448433D00E6F665 /* Debug */,
